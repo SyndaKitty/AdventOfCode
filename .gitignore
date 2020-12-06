@@ -1,0 +1,9 @@
+*.class
+*.exe
+*.obj
+
+.idea/
+obj/
+
+# Rider module
+*.iml
