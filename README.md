@@ -29,12 +29,12 @@ All AoC soutions I have finished
 |    |[C#][csharp]   |
 |----|---------------|
 | 01 |[✅][17d01csharp] |
-| 02 |[✅][17d01csharp] |
-| 03 |[✅][17d01csharp] |
-| 04 |[✅][17d01csharp] |
-| 05 |[✅][17d01csharp] |
-| 06 |[✅][17d01csharp] |
-| 07 |[❌][17d01csharp] |
+| 02 |[✅][17d02csharp] |
+| 03 |[✅][17d03csharp] |
+| 04 |[✅][17d04csharp] |
+| 05 |[✅][17d05csharp] |
+| 06 |[✅][17d06csharp] |
+| 07 |[❌][17d07csharp] |
 
 [csharp]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [17d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/CSharp/Program.cs#L145
