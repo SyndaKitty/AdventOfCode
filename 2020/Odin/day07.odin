@@ -18,18 +18,19 @@ import "../../libs/Odin/parse"
 
 Mapping :: struct
 {
-    container: []string,
-    contents: []string,
+    container: string,
+    contents: string,
     count: int,
     id: int
 };
 
-// BagNode :: struct
-// {
-//     num: int,
-//     color: []string,
-//     children: [dynamic]BagNode
-// }
+combine :: proc(a,b: string) -> string
+{
+    builder := strings.make_builder();
+    strings.write_string(&builder, a);
+    strings.write_string(&builder, b);
+    return strings.to_string(builder);
+}
 
 
 main :: proc()
@@ -50,11 +51,11 @@ main :: proc()
     for line in lines
     {
         words := strings.split(line, " ");
-        container := words[0:2];
+        container := combine(words[0], words[1]);
         for i := 2; i < len(words) - 2; i += 3
         {
             count,_ := strconv.parse_int(words[i]);
-            contents := words[i+1:i+3];
+            contents := combine(words[i+1], words[i+2]);
 
             append(&mappings, Mapping{container, contents, count, id});
         }
@@ -69,8 +70,8 @@ main :: proc()
 
 part_one :: proc(mappings: [dynamic]Mapping)
 {
-    valid_colors := make([dynamic][]string);
-    append(&valid_colors, strings.split("shiny gold", " "));
+    valid_colors := make([dynamic]string);
+    append(&valid_colors, "shinygold");
     added_colors := make(map[int]bool);
 
     for i := 0; i < len(valid_colors); i += 1
@@ -82,17 +83,7 @@ part_one :: proc(mappings: [dynamic]Mapping)
                 continue;
             }
 
-            equal := true;
-            for str,j in mapping.contents
-            {
-                if str != valid_colors[i][j]
-                {
-                    equal = false;
-                    break;
-                }
-            }
-
-            if equal
+            if mapping.contents == valid_colors[i]
             {
                 append(&valid_colors, mapping.container);
                 added_colors[mapping.id] = true;
@@ -108,29 +99,21 @@ part_two :: proc(mappings: [dynamic]Mapping)
 {
     Entry :: struct
     {
-        color: []string
+        color: string
         count: int
     };
 
     bag_count := 0;
     bags := make([dynamic]Entry);
     
-    append(&bags, Entry{strings.split("shiny gold", " "), 1});
+    append(&bags, Entry{"shinygold", 1});
 
     for i := 0; i < len(bags); i += 1
     {
         for mapping in mappings
         {
             equal := true;
-            for str,j in mapping.container
-            {
-                if str != bags[i].color[j]
-                {
-                    equal = false;
-                    break;
-                }
-            }
-            if equal
+            if mapping.container == bags[i].color
             {
                 bag_count += mapping.count * bags[i].count;
                 append(&bags, Entry{mapping.contents, mapping.count * bags[i].count});
