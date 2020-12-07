@@ -112,7 +112,6 @@ part_two :: proc(mappings: [dynamic]Mapping)
     {
         for mapping in mappings
         {
-            equal := true;
             if mapping.container == bags[i].color
             {
                 bag_count += mapping.count * bags[i].count;
