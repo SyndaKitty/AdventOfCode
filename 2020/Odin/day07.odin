@@ -20,8 +20,16 @@ Mapping :: struct
 {
     container: []string,
     contents: []string,
+    count: int,
     id: int
 };
+
+// BagNode :: struct
+// {
+//     num: int,
+//     color: []string,
+//     children: [dynamic]BagNode
+// }
 
 
 main :: proc()
@@ -41,22 +49,26 @@ main :: proc()
 
     for line in lines
     {
-        fmt.println(line);
-
         words := strings.split(line, " ");
         container := words[0:2];
-        fmt.println(container);
         for i := 2; i < len(words) - 2; i += 3
         {
-            // ignore number
+            count,_ := strconv.parse_int(words[i]);
             contents := words[i+1:i+3];
-            fmt.println(contents);
 
-            append(&mappings, Mapping{container, contents, id});
+            append(&mappings, Mapping{container, contents, count, id});
         }
         id += 1;
     }
 
+    part_one(mappings);
+    part_two(mappings);
+
+}
+
+
+part_one :: proc(mappings: [dynamic]Mapping)
+{
     valid_colors := make([dynamic][]string);
     append(&valid_colors, strings.split("shiny gold", " "));
     added_colors := make(map[int]bool);
@@ -67,7 +79,6 @@ main :: proc()
         {
             if mapping.id in added_colors
             {
-                fmt.println("Already added id", mapping.id);
                 continue;
             }
 
@@ -83,7 +94,6 @@ main :: proc()
 
             if equal
             {
-                fmt.println("Adding", mapping, "as valid color because it contains", valid_colors[i]);
                 append(&valid_colors, mapping.container);
                 added_colors[mapping.id] = true;
             }
@@ -91,24 +101,41 @@ main :: proc()
     }
 
     fmt.println(len(valid_colors) - 1);
+}
 
 
-    // parse_info := parse.make_parse_info(input);
-    // for parse.has_next(&parse_info)
-    // {
-    //     parse.next_rune(&parse_info);
-    //     parse.next_number(&parse_info);
-    //     parse.next_word(&parse_info);
-    // }
+part_two :: proc(mappings: [dynamic]Mapping)
+{
+    Entry :: struct
+    {
+        color: []string
+        count: int
+    };
 
-    // for c in input
-    // {
-    //     switch c
-    //     {
-    //         case ' ':
+    bag_count := 0;
+    bags := make([dynamic]Entry);
+    
+    append(&bags, Entry{strings.split("shiny gold", " "), 1});
 
-    //     }
-    // }
-
-    fmt.println();
+    for i := 0; i < len(bags); i += 1
+    {
+        for mapping in mappings
+        {
+            equal := true;
+            for str,j in mapping.container
+            {
+                if str != bags[i].color[j]
+                {
+                    equal = false;
+                    break;
+                }
+            }
+            if equal
+            {
+                bag_count += mapping.count * bags[i].count;
+                append(&bags, Entry{mapping.contents, mapping.count * bags[i].count});
+            }
+        }
+    }
+    fmt.println(bag_count);
 }
