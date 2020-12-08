@@ -15,6 +15,11 @@ import "../../libs/Odin/aoc"
 import "../../libs/Odin/permute"
 import "../../libs/Odin/parse"
 
+swap := map[string]string
+{
+    "jmp"="nop",
+    "nop"="jmp"
+};
 
 simulate :: proc(lines: []string, swap_line: int) -> (int, bool)
 {
@@ -27,25 +32,15 @@ simulate :: proc(lines: []string, swap_line: int) -> (int, bool)
     {
         parts := strings.split(lines[pc], " ");
         name := parts[0];
-        if swap_line == pc
-        {
-            if name == "nop" {
-                name = "jmp";
-            } else if name == "jmp"
-            {
-                name = "nop";
-            }
-        }
+        amount,_ := strconv.parse_int(parts[1]);
 
-        amount,ok := strconv.parse_int(parts[1]);
-        fmt.println(name, amount);
-        
+        if swap_line == pc do name = swap[name];
+
         if pc in run_commands
         {
             // This program loops infinitely
             return accumulator, false;
         }
-
         run_commands[pc] = true;
 
         switch name
@@ -72,20 +67,22 @@ main :: proc()
 
     lines := strings.split(input, "\r\n");
 
+    // Part 1
+    acc,_ := simulate(lines, -1);
+    fmt.println(acc);
+
+    // Part 2
     // Brute force replace commands to see which one doesn't result in infinite loop
     for line,i in lines
     {
         parts := strings.split(line, " ");
-        switch parts[0]
+        if parts[0] != "jmp" && parts[0] != "nop" do continue;
+        
+        acc,ok := simulate(lines, i);
+        if ok
         {
-            case "jmp": fallthrough;
-            case "nop":
-                acc,ok := simulate(lines, i);
-                if ok
-                {
-                    fmt.println(acc);
-                    return;
-                }
+            fmt.println(acc);
+            return;
         }
     }
 }
