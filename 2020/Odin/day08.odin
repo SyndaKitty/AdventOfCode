@@ -21,11 +21,38 @@ main :: proc()
     using aoc;
     input := string(#load("../inputs/08.txt"));
 
-    lines := strings.split(input, "\r\n");
-    lines,_ = strings.replace_all(input, "asd", "def");
-    for line in lines
-    {
+    accumulator := 0;
 
+    run_commands: map[int]bool;
+
+    lines := strings.split(input, "\r\n");
+    
+    pc := 0;
+    for
+    {
+        command := lines[pc];
+        parts := strings.split(command, " ");
+        name := parts[0];
+        amount,ok := strconv.parse_int(parts[1]);
+        fmt.println(name, amount);
+        
+        if pc in run_commands
+        {
+            break;
+        }
+
+        run_commands[pc] = true;
+
+        switch name
+        {
+            case "nop":
+                pc += 1;
+            case "acc":
+                accumulator += amount;
+                pc += 1;
+            case "jmp":
+                pc += amount;
+        }
     }
 
 
@@ -47,5 +74,5 @@ main :: proc()
     //     }
     // }
 
-    fmt.println();
+    fmt.println(accumulator);
 }
