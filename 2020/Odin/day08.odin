@@ -16,29 +16,34 @@ import "../../libs/Odin/permute"
 import "../../libs/Odin/parse"
 
 
-main :: proc()
+simulate :: proc(lines: []string, swap_line: int) -> (int, bool)
 {
-    using aoc;
-    input := string(#load("../inputs/08.txt"));
-
     accumulator := 0;
+    pc := 0;
 
     run_commands: map[int]bool;
 
-    lines := strings.split(input, "\r\n");
-    
-    pc := 0;
     for
     {
-        command := lines[pc];
-        parts := strings.split(command, " ");
+        parts := strings.split(lines[pc], " ");
         name := parts[0];
+        if swap_line == pc
+        {
+            if name == "nop" {
+                name = "jmp";
+            } else if name == "jmp"
+            {
+                name = "nop";
+            }
+        }
+
         amount,ok := strconv.parse_int(parts[1]);
         fmt.println(name, amount);
         
         if pc in run_commands
         {
-            break;
+            // This program loops infinitely
+            return accumulator, false;
         }
 
         run_commands[pc] = true;
@@ -53,26 +58,34 @@ main :: proc()
             case "jmp":
                 pc += amount;
         }
+
+        if pc >= len(lines) do break;
     }
+    return accumulator, true;
+}
 
 
-    // parse_info := parse.make_parse_info(input);
-    // for parse.has_next(&parse_info)
-    // {
-    //     parse.next_number(&parse_info);
-    //     parse.next_word(&parse_info);
-    //     parse.next_rune(&parse_info);
-    // }
+main :: proc()
+{
+    using aoc;
+    input := string(#load("../inputs/08.txt"));
 
+    lines := strings.split(input, "\r\n");
 
-    // for c in input
-    // {
-    //     switch c
-    //     {
-    //         case ' ':
-
-    //     }
-    // }
-
-    fmt.println(accumulator);
+    // Brute force replace commands to see which one doesn't result in infinite loop
+    for line,i in lines
+    {
+        parts := strings.split(line, " ");
+        switch parts[0]
+        {
+            case "jmp": fallthrough;
+            case "nop":
+                acc,ok := simulate(lines, i);
+                if ok
+                {
+                    fmt.println(acc);
+                    return;
+                }
+        }
+    }
 }
