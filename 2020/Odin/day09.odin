@@ -29,44 +29,11 @@ check_for_sum :: proc(numbers: []int, sum: int) -> bool
     return false;
 }
 
-sum :: proc(numbers: []int) -> int
-{
-    total := 0;
-    for i := 0; i < len(numbers); i += 1
-    {
-        total += numbers[i];
-    }
-    return total;
-}
-
-min :: proc(numbers: []int) -> int
-{
-    smallest := numbers[0];
-    for i := 1; i < len(numbers); i += 1
-    {
-        if numbers[i] < smallest
-        {
-            smallest = numbers[i];
-        }
-    }
-    return smallest;
-}
-
-max :: proc(numbers: []int) -> int
-{
-    largest := numbers[0];
-    for i := 1; i < len(numbers); i += 1
-    {
-        if numbers[i] > largest
-        {
-            largest = numbers[i];
-        }
-    }
-    return largest;
-}
 
 main :: proc()
 {
+    using aoc;
+
     input := string(#load("../inputs/09.txt"));
     lines := strings.split(input, "\r\n");
 
@@ -104,10 +71,10 @@ main :: proc()
         if size >= len(numbers) do break;
         for i := 0; i + size - 1 < len(numbers); i += 1
         {
-            // fmt.println("Checking if", numbers[i:i+size], "sums to", bad_number);
-            if sum(numbers[i:i+size]) == bad_number
+            range := numbers[i:i+size];
+            if sum(range) == bad_number
             {
-                fmt.println(min(numbers[i:i+size]) + max(numbers[i:i+size]));
+                fmt.println(min(range) + max(range));
             }
         }
     }

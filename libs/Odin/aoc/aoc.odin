@@ -55,5 +55,79 @@ clear_map :: proc(data: ^map[$K]$V)
 }
 
 
+sum :: proc(numbers: []int) -> int
+{
+    total := 0;
+    for i := 0; i < len(numbers); i += 1
+    {
+        total += numbers[i];
+    }
+    return total;
+}
+
+
+min_list :: proc(numbers: []int) -> int
+{
+    smallest := numbers[0];
+    for i := 1; i < len(numbers); i += 1
+    {
+        if numbers[i] < smallest
+        {
+            smallest = numbers[i];
+        }
+    }
+    return smallest;
+}
+
+
+min_2 :: proc(a: int, b: int) -> int
+{
+    if a < b do return a;
+    return b;
+}
+
+
+min_3 :: proc(a: int, b: int, c: int) -> int
+{
+    min := a;
+    if b < min do min = b;
+    if c < min do min = c;
+    return min;
+}
+
+max_list :: proc(numbers: []int) -> int
+{
+    largest := numbers[0];
+    for i := 1; i < len(numbers); i += 1
+    {
+        if numbers[i] > largest
+        {
+            largest = numbers[i];
+        }
+    }
+    return largest;
+}
+
+
+max_2 :: proc(a: int, b: int) -> int
+{
+    if a > b do return a;
+    return b;
+}
+
+
+max_3 :: proc(a: int, b: int, c: int) -> int
+{
+    min := a;
+    if b > min do min = b;
+    if c > min do min = c;
+    return min;
+}
+
+
+min :: proc { min_2, max_3, min_list };
+max :: proc { max_2, max_3, min_list };
+
+
 int_cos := [4]int{1,0,-1,0};
 int_sin := [4]int{0,1,0,-1};
