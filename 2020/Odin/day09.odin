@@ -29,10 +29,45 @@ check_for_sum :: proc(numbers: []int, sum: int) -> bool
     return false;
 }
 
+sum :: proc(numbers: []int) -> int
+{
+    total := 0;
+    for i := 0; i < len(numbers); i += 1
+    {
+        total += numbers[i];
+    }
+    return total;
+}
+
+min :: proc(numbers: []int) -> int
+{
+    smallest := numbers[0];
+    for i := 1; i < len(numbers); i += 1
+    {
+        if numbers[i] < smallest
+        {
+            smallest = numbers[i];
+        }
+    }
+    return smallest;
+}
+
+max :: proc(numbers: []int) -> int
+{
+    largest := numbers[0];
+    for i := 1; i < len(numbers); i += 1
+    {
+        if numbers[i] > largest
+        {
+            largest = numbers[i];
+        }
+    }
+    return largest;
+}
+
 main :: proc()
 {
     using aoc;
-    using parse;
 
     input := string(#load("../inputs/09.txt"));
     lines := strings.split(input, "\r\n");
@@ -43,19 +78,19 @@ main :: proc()
 
     begin := 0;
     end := 0;
+    bad_number: int;
 
     for line in lines 
     {
-        //fmt.println(line, begin, end);
-        
         number,ok := strconv.parse_int(line);
         end += 1;
         if end - begin > preamble_size
         {
-            //fmt.println("Checking", numbers[begin:], "for", number);
             if !check_for_sum(numbers[begin:], number)
             {
                 fmt.println("ERROR ON", number);
+                bad_number = number;
+                break;
             }
             begin += 1;
         }
@@ -63,24 +98,21 @@ main :: proc()
         append(&numbers, number);
     }
 
+
+    // Find contiguous set of numbers that sum to bad_number
+    for size := 2;;size += 1
+    {
+        if size >= len(numbers) do break;
+        for i := 0; i + size - 1 < len(numbers); i += 1
+        {
+            // fmt.println("Checking if", numbers[i:i+size], "sums to", bad_number);
+            if sum(numbers[i:i+size]) == bad_number
+            {
+                fmt.println(min(numbers[i:i+size]) + max(numbers[i:i+size]));
+            }
+        }
+    }
+
     fmt.println();
 
-    // parse_info := make_parse_info(input);
-    // for has_next(&parse_info)
-    // {
-    //     next_word(&parse_info);
-    //     next_number(&parse_info);
-    //     next_rune(&parse_info);
-    // }
-
-
-
-    // for c in input
-    // {
-    //     switch c
-    //     {
-    //         case ' ':
-
-    //     }
-    // }
 }
