@@ -67,8 +67,6 @@ max :: proc(numbers: []int) -> int
 
 main :: proc()
 {
-    using aoc;
-
     input := string(#load("../inputs/09.txt"));
     lines := strings.split(input, "\r\n");
 
@@ -80,6 +78,7 @@ main :: proc()
     end := 0;
     bad_number: int;
 
+    // Part 1
     for line in lines 
     {
         number,ok := strconv.parse_int(line);
@@ -98,7 +97,7 @@ main :: proc()
         append(&numbers, number);
     }
 
-
+    // Part 2
     // Find contiguous set of numbers that sum to bad_number
     for size := 2;;size += 1
     {
@@ -112,7 +111,4 @@ main :: proc()
             }
         }
     }
-
-    fmt.println();
-
 }
