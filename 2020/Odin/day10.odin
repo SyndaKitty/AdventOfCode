@@ -30,6 +30,9 @@ main :: proc()
     append(&jolts, 0);
     append(&jolts, end_jolt);
 
+    // Sort the jolts! I was able to solve without this, but 
+    //  doing this lets us make a lot of assumptions that make
+    //  the solution much more elegant
     slice.sort(jolts[:]);
 
     part_one(jolts[:]);
@@ -39,23 +42,12 @@ main :: proc()
 
 part_one :: proc(jolts: []int)
 {
-    in_jolt := 0;
     differences: [4]int;
 
     jolt_count := len(jolts);
-    outer: for i := 0; i < jolt_count; i += 1
+    for i := 0; i < jolt_count - 1; i += 1
     {
-        next_jolt := 999;
-        for jolt in jolts
-        {
-            if jolt > in_jolt && jolt < next_jolt
-            {
-                next_jolt = jolt;
-            }
-        }
-        if next_jolt == 999 do break outer;
-        differences[next_jolt - in_jolt] += 1;
-        in_jolt = next_jolt;
+        differences[jolts[i+1] - jolts[i]] += 1;
     }
 
     fmt.println(differences[1] * differences[3]);
@@ -66,40 +58,17 @@ part_two :: proc(jolts: []int, end_jolt: int)
 {
     jolt_count := len(jolts);
     
-    // Put together a lookup table to determine the next valid jolts
-    combinations: map[int][dynamic]int;
+    path_counts := make([]int, jolt_count);
+    path_counts[0] = 1;
+    
     for in_jolt,i in jolts
     {
-        next := make([dynamic]int);
-        for j := i + 1; j <= i + 3 && j < jolt_count; j += 1
+        in_count := path_counts[i];
+        for j := i + 1; j < jolt_count && jolts[j] <= in_jolt + 3; j += 1
         {
-            out_jolt := jolts[j];
-            if out_jolt <= in_jolt + 3
-            {
-                append(&next, out_jolt);
-            }
+            path_counts[j] += in_count;
         }
-        combinations[in_jolt] = next;
     }
 
-
-    // Track how many paths we have, key=jolt, value=number of paths
-    path_count: map[int]int;
-    // We start with one path that ends with jolt value 0
-    path_count[0] = 1;
-
-    // Convert each jolt value into the next
-    for jolt in jolts
-    {
-        paths := path_count[jolt];
-        if paths == 0 || len(combinations[jolt]) == 0 do continue;
-
-        for next_jolt in combinations[jolt]
-        {
-            path_count[next_jolt] += paths;
-        }
-        path_count[jolt] = 0;
-    }
-
-    fmt.println(path_count[end_jolt]);
+    fmt.println(path_counts[jolt_count-1]);
 }
