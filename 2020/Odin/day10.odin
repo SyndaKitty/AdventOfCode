@@ -26,9 +26,8 @@ main :: proc()
     }
 
     // Add beginning and end jolt
-    end_jolt := max_jolt + 3;
     append(&jolts, 0);
-    append(&jolts, end_jolt);
+    append(&jolts, max_jolt + 3);
 
     // Sort the jolts! I was able to solve without this, but 
     //  doing this lets us make a lot of assumptions that make
@@ -36,7 +35,7 @@ main :: proc()
     slice.sort(jolts[:]);
 
     part_one(jolts[:]);
-    part_two(jolts[:], end_jolt);
+    part_two(jolts[:]);
 }
 
 
@@ -49,12 +48,11 @@ part_one :: proc(jolts: []int)
     {
         differences[jolts[i+1] - jolts[i]] += 1;
     }
-
     fmt.println(differences[1] * differences[3]);
 }
 
 
-part_two :: proc(jolts: []int, end_jolt: int)
+part_two :: proc(jolts: []int)
 {
     jolt_count := len(jolts);
     
@@ -69,6 +67,5 @@ part_two :: proc(jolts: []int, end_jolt: int)
             path_counts[j] += in_count;
         }
     }
-
     fmt.println(path_counts[jolt_count-1]);
 }
