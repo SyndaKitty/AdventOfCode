@@ -39,12 +39,62 @@ main :: proc()
         y += 1;
     }
 
-    //print_state(state, width, height);
-    part_one(state, width, height);
+    start_state: map[i64]rune;
+    
+    // Part 1
+    copy_state(&state, &start_state);
+    simulate(start_state, width, height, 4, count_neighbors_one);
+
+    // Part 2
+    copy_state(&state, &start_state);    
+    simulate(state, width, height, 5, count_neighbors_two);
 }
 
 
-count_neighbors :: proc(state: map[i64]rune, x,y: int) -> int
+simulate :: proc(state: map[i64]rune, width,height,tolerance: int, count_seats: proc(state: map[i64]rune, x,y: int) -> int)
+{   
+    old_state := state;
+    new_state := make(map[i64]rune);
+
+    for 
+    {
+        changed := false;
+        for y in 0..<height
+        {
+            for x in 0..<width
+            {
+                c := count_seats(state, x, y);
+                s := old_state[aoc.hash_2D(x, y)];
+                if s == 'L' && c == 0
+                {
+                    new_state[aoc.hash_2D(x, y)] = '#';
+                    changed = true;
+                }
+                else if s == '#' && c >= tolerance
+                {
+                    new_state[aoc.hash_2D(x, y)] = 'L';
+                    changed = true;   
+                }
+            }
+        }
+
+        if !changed
+        {
+            c := 0;
+            for key, value in new_state
+            {
+                if value == '#' do c += 1;
+            }
+            fmt.println(c);
+            return;
+        }
+
+        copy_state(&new_state, &old_state);
+    }
+}
+
+
+count_neighbors_one :: proc(state: map[i64]rune, x,y: int) -> int
 {
     offset_x := []int { 1, 1, 0, -1, -1, -1, 0,   1 };
     offset_y := []int { 0, 1, 1,  1,  0, -1, -1, -1 };
@@ -56,6 +106,35 @@ count_neighbors :: proc(state: map[i64]rune, x,y: int) -> int
         if ok && seat == '#'
         {
             count += 1;
+        }
+    }
+    return count;
+}
+
+
+count_neighbors_two :: proc(state: map[i64]rune, x,y: int) -> int
+{
+    offset_x := []int { 1, 1, 0, -1, -1, -1, 0,   1 };
+    offset_y := []int { 0, 1, 1,  1,  0, -1, -1, -1 };
+
+    count := 0;
+    offset: for o in 0..<8
+    {
+        for l := 1;; l += 1
+        {
+            x_o := x+offset_x[o]*l;
+            y_o := y+offset_y[o]*l;
+            seat,ok := state[aoc.hash_2D(x_o, y_o)];
+            if !ok do continue offset;
+            if seat == '#'
+            {
+                count += 1;
+                continue offset;
+            }
+            if seat == 'L'
+            {
+                continue offset;
+            }
         }
     }
     return count;
@@ -75,49 +154,11 @@ print_state :: proc(state: map[i64]rune, w,h: int)
     fmt.println();
 }
 
-part_one :: proc(state: map[i64]rune, width: int, height: int)
-{   
-    old_state := state;
-    new_state := make(map[i64]rune);
 
-    for 
+copy_state :: proc(from, to: ^map[i64]rune)
+{
+    for key, value in from
     {
-        changed := false;
-        for y in 0..<height
-        {
-            for x in 0..<width
-            {
-                c := count_neighbors(state, x, y);
-                s := old_state[aoc.hash_2D(x, y)];
-                if s == 'L' && c == 0
-                {
-                    new_state[aoc.hash_2D(x, y)] = '#';
-                    changed = true;
-                }
-                else if s == '#' && c >= 4
-                {
-                    new_state[aoc.hash_2D(x, y)] = 'L';
-                    changed = true;   
-                }
-            }
-        }
-
-        if !changed
-        {
-            c := 0;
-            for key, value in new_state
-            {
-                if value == '#' do c += 1;
-            }
-            fmt.println(c);
-            return;
-        }
-
-        //print_state(new_state, width, height);
-
-        for key, value in new_state
-        {
-            old_state[key] = value;
-        }
+        to[key] = value;
     }
 }
