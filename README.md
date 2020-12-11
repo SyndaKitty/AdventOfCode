@@ -14,7 +14,8 @@ All AoC soutions I have finished
 | 07 |[✅][20d07odin] |
 | 08 |[✅][20d08odin] |
 | 09 |[✅][20d09odin] |
-| 09 |[✅][20d10odin] |
+| 10 |[✅][20d10odin] |
+| 11 |[✅][20d11odin] |
 
 [odin]: http://odin-lang.org/
 [20d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day01.odin
@@ -27,6 +28,7 @@ All AoC soutions I have finished
 [20d08odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day08.odin
 [20d09odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day09.odin
 [20d10odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day10.odin
+[20d11odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day11.odin
 
 
 ## 2019
