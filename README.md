@@ -38,16 +38,21 @@ All AoC soutions I have finished
 ## 2018
 
 ## 2017
-|    |[C#][csharp]   |
-|----|---------------|
-| 01 |[✅][17d01csharp] |
-| 02 |[✅][17d02csharp] |
-| 03 |[✅][17d03csharp] |
-| 04 |[✅][17d04csharp] |
-| 05 |[✅][17d05csharp] |
-| 06 |[✅][17d06csharp] |
-| 07 |[❌][17d07csharp] |
+|    |[Odin][odin]|[C#][csharp]   |
+|----|---------------|---------------|
+| 01 |[✅][17d01odin] |[✅][17d01csharp] |
+| 02 |[✅][17d02odin] |[✅][17d02csharp] |
+| 03 |[✅][17d03odin] |[✅][17d03csharp] |
+| 04 |[✅][17d04odin] |[✅][17d04csharp] |
+| 05 |                |[✅][17d01csharp] |
+| 06 |                |[✅][17d01csharp] |
+| 07 |                |[❌][17d01csharp] |
 
+
+[17d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day01.odin
+[17d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day02.odin
+[17d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day03.odin
+[17d04odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day04.odin
 [csharp]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [17d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/CSharp/Program.cs#L145
 [17d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/CSharp/Program.cs#L188
