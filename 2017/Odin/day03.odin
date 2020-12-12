@@ -8,8 +8,7 @@ import "core:strconv"
 import "../../libs/Odin/aoc"
 
 
-main :: proc()
-{
+main :: proc() {
     using aoc;
     input := string(#load("../inputs/03.txt"));
     max_block,_ := strconv.parse_int(input);
