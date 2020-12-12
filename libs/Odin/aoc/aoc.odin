@@ -15,7 +15,7 @@ sort :: proc
 };
 
 
-hash_2D :: proc(x: int, y: int) -> i64
+hash_2D_ints :: proc(x: int, y: int) -> i64
 {
     mask_32 :: 1 << 32 - 1;
 
@@ -26,6 +26,16 @@ hash_2D :: proc(x: int, y: int) -> i64
 
     return hash;
 }
+
+
+hash_2D_vector :: proc(val: Vector2) -> i64
+{
+    return inline hash_2D_ints(val[0], val[1]);
+}
+
+
+hash_2D :: proc {hash_2D_ints, hash_2D_vector};
+h2D :: hash_2D;
 
 
 xor :: inline proc(a: bool, b: bool) -> bool
@@ -129,7 +139,12 @@ max_3 :: proc(a: int, b: int, c: int) -> int
 
 min :: proc { min_2, max_3, min_list };
 max :: proc { max_2, max_3, min_list };
+
+
 Vector2 :: [2]int;
 
-int_cos := [4]int{1,0,-1,0};
-int_sin := [4]int{0,1,0,-1};
+int_cos :: [?]int{1,0,-1,0};
+int_sin :: [?]int{0,1,0,-1};
+neighbors :: [?]Vector2 {{1,0}, {1,1}, {0,1}, {-1,1}, {-1,0}, {-1,-1}, {0,-1}, {1,-1}};
+neighbors_x :: [?]int {1, 1, 0, -1, -1, -1, 0, 1 };
+neighbors_y :: [?]int {0, 1, 1, 1, 0, -1, -1, -1 };
