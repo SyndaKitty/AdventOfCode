@@ -1,6 +1,8 @@
 package aoc
 
 import "core:strconv"
+import "core:slice"
+import "core:strings"
 
 
 sort_two :: proc(a: int, b: int) -> (int, int)
@@ -9,9 +11,25 @@ sort_two :: proc(a: int, b: int) -> (int, int)
 }
 
 
+sort_string :: proc(word: string) -> string {
+    runes: [dynamic]rune;
+    defer delete(runes);
+    for c in word {
+        append(&runes, c);
+    }
+    slice.sort(runes[:]);
+    builder := strings.make_builder();
+    for r in runes {
+        strings.write_rune_builder(&builder, r);
+    }
+    return strings.to_string(builder);
+}
+
+
 sort :: proc
 {
-    sort_two
+    sort_two,
+    sort_string
 };
 
 
