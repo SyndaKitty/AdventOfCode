@@ -16,6 +16,13 @@ main :: proc()
             total += int(c - '0');
         }
     }
+    fmt.println(total);
 
+    total = 0;
+    for c,i in input {
+        if c == rune(input[(i+l/2)%l]) {
+            total += int(c - '0');
+        }
+    }
     fmt.println(total);
 }
