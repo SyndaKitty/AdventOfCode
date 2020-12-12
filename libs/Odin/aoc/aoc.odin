@@ -129,7 +129,7 @@ max_3 :: proc(a: int, b: int, c: int) -> int
 
 min :: proc { min_2, max_3, min_list };
 max :: proc { max_2, max_3, min_list };
-
+Vector2 :: [2]int;
 
 int_cos := [4]int{1,0,-1,0};
 int_sin := [4]int{0,1,0,-1};
