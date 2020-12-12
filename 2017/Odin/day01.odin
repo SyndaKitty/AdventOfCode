@@ -9,6 +9,7 @@ main :: proc()
     input := string(#load("../inputs/01.txt"));
     input,_ = strings.replace_all(input, "\r\n", "");
 
+    // Part 1
     total := 0;
     l := len(input);
     for c,i in input {
@@ -18,6 +19,7 @@ main :: proc()
     }
     fmt.println(total);
 
+    // Part 2
     total = 0;
     for c,i in input {
         if c == rune(input[(i+l/2)%l]) {
