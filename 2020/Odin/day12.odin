@@ -1,36 +1,29 @@
 package main
 
-import "core:math"
 import "core:fmt"
-import "core:os"
 import "core:strings"
 import "core:strconv"
-import "core:container"
-import "core:time"
-import "core:sys/windows"
-
 
 // Custom libraries
 import "../../libs/Odin/aoc"
-import "../../libs/Odin/permute"
-import "../../libs/Odin/parse"
-
 
 main :: proc()
 {
     input := string(#load("../inputs/12.txt"));
     lines := strings.split(input, "\r\n");
 
+    part_one(lines);
     part_two(lines);
 }
 
 dir := map[rune]int {'E'=0, 'N'=1, 'W'=2, 'S'=3};
+Vector2 :: [2]int;
 
 part_one :: proc(lines: []string)
 {
+    using aoc;
     heading := 0;
-    x := 0;
-    y := 0;
+    pos := Vector2{0, 0};
 
     for line in lines
     {
@@ -41,30 +34,27 @@ part_one :: proc(lines: []string)
         {
             case 'N','E','S','W':
                 h := dir[instruction];
-                x += aoc.int_cos[h] * amount;
-                y += aoc.int_sin[h] * amount;
+                pos += Vector2{int_cos[h], int_sin[h]} * amount;
             case 'R':
                 heading -= int(amount / 90);
             case 'L':
                 heading += int(amount / 90);
             case 'F':
-                x += aoc.int_cos[heading %% 4] * amount;
-                y += aoc.int_sin[heading %% 4] * amount;
+                heading %%= 4;
+                pos += Vector2{int_cos[heading], int_sin[heading]} * amount;
         }
     }
 
-    fmt.println(abs(x) + abs(y));
+    fmt.println(abs(pos[0]) + abs(pos[1]));
 }
 
-Vector2 :: [2]int;
 part_two :: proc(lines: []string)
 {
+    using aoc;
     // The waypoint's position can be thought of as 
     //  a velocity that we apply with the command F
-    vx := 10;
-    vy := 1;
-    x := 0;
-    y := 0;
+    vel := Vector2{10, 1};
+    pos := Vector2{0, 0};
 
     for line in lines
     {
@@ -75,23 +65,21 @@ part_two :: proc(lines: []string)
         {
             case 'N','E','S','W':
                 h := dir[instruction];
-                vx += aoc.int_cos[h] * amount;
-                vy += aoc.int_sin[h] * amount;
+                vel += Vector2{int_cos[h], int_sin[h]} * amount;
             case 'L':
                 for i in 1..int(amount/90)
                 {
-                    vx, vy = -vy, vx;
+                    vel[0], vel[1] = -vel[1], vel[0];
                 }
             case 'R':
-                for i in 1..int(amount/90)
-                {
-                    vx, vy = vy, -vx;
-                }
+                 for i in 1..int(amount/90)
+                 {
+                    vel[0], vel[1] = vel[1], -vel[0];
+                 }
             case 'F':
-                x += vx * amount;
-                y += vy * amount;
+                pos += vel * amount;
         }
     }
 
-    fmt.println(abs(x) + abs(y));
+    fmt.println(abs(pos[0]) + abs(pos[1]));
 }
