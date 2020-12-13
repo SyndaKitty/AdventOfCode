@@ -161,8 +161,8 @@ max :: proc { max_2, max_3, min_list };
 
 Vector2 :: [2]int;
 
-int_cos :: [?]int{1,0,-1,0};
-int_sin :: [?]int{0,1,0,-1};
+int_cos := [?]int{1,0,-1,0};
+int_sin := [?]int{0,1,0,-1};
 neighbors :: [?]Vector2 {{1,0}, {1,1}, {0,1}, {-1,1}, {-1,0}, {-1,-1}, {0,-1}, {1,-1}};
 neighbors_x :: [?]int {1, 1, 0, -1, -1, -1, 0, 1 };
 neighbors_y :: [?]int {0, 1, 1, 1, 0, -1, -1, -1 };

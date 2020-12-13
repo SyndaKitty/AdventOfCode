@@ -8,7 +8,7 @@ import "core:strconv"
 import "../../libs/Odin/aoc"
 
 
-main :: proc()
+main :: proc() 
 {
-    input := string(#load("../inputs/__.txt"));
+    input := string(#load("../inputs/13.txt"));
 }
