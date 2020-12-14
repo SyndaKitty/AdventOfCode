@@ -4,10 +4,6 @@ import "core:fmt"
 import "core:strings"
 import "core:strconv"
 
-// Custom libraries
-import "../../libs/Odin/aoc"
-
-
 
 main :: proc() 
 {
@@ -49,6 +45,30 @@ part_one :: proc(lines: []string)
 }
 
 
+apply_mask :: proc(value: int, mask: string) -> int
+{
+    result := 0;
+    digit_value := 1;
+    digit_place: uint = 0;
+    for i := len(mask) - 1; i >= 0; i -= 1 
+    {   
+        switch mask[i]
+        {
+            case 'X':
+                result += ((value >> digit_place) & 1) * digit_value;
+            case '1':
+                result += 1 * digit_value;
+            case '0':
+                // noop
+        }
+        digit_value *= 2;
+        digit_place += 1;
+    }
+
+    return result;
+}
+
+
 part_two :: proc(lines: []string)
 {
     mask: string;
@@ -85,90 +105,39 @@ part_two :: proc(lines: []string)
 
 decode :: proc(address: int, mask: string) -> [dynamic]int
 {
+    length := uint(len(mask));
     addresses: [dynamic]int;
-
-    address_bits := to_binary(address);
-    floating_indices: [dynamic]int;
-    bits: [dynamic]int;
-    for c,i in mask 
+    floating_indices: [dynamic]uint;
+    
+    base_address := 0;
+    digit_value := 1;
+    for i: uint = 0; i < uint(len(mask)); i += 1
     {
-        switch c
+        mask_bit := mask[length - i - 1];
+        address_bit := (address >> i) & 1;
+        switch mask_bit
         {
             case '0','1':
-                append(&bits, int(address_bits[i] - '0') | int(c - '0'));
+                base_address += (address_bit | int(mask_bit - '0')) * digit_value;
             case 'X':
-                append(&bits, 0);
                 append(&floating_indices, i);
         }
+        digit_value *= 2;
     }
 
-    append(&addresses, bits_to_int(bits));
-    last_float_ind := floating_indices[len(floating_indices)-1];
-    combinations := 1 << uint(len(floating_indices));
-    
+    floats := uint(len(floating_indices));
+    combinations := 1 << floats;
+
     for nums := 0; nums < combinations; nums += 1
     {
-        for digit : uint = 0; digit < uint(len(floating_indices)); digit += 1
+        new_address := base_address;
+        for i: uint = 0; i < floats; i += 1
         {
-            bits[floating_indices[digit]] = 1 if nums & (1<<digit) > 0 else 0;
+            float_bit := (nums >> i) & 1;
+            new_address += (1<<floating_indices[i]) * float_bit;
         }
-        append(&addresses, bits_to_int(bits));
+        append(&addresses, new_address);
     }
 
     return addresses;
-}
-
-
-apply_mask :: proc(value: int, mask: string) -> int
-{
-    binary_value := to_binary(value);
-    result := 0;
-    digit := 1;
-    for i := len(mask) - 1; i >= 0; i -= 1 
-    {
-        switch mask[i]
-        {
-            case 'X':
-                result += int(binary_value[i] - '0') * digit;
-            case '1':
-                result += 1 * digit;
-            case '0':
-                // noop
-        }
-        digit *= 2;
-    }
-
-    return result;
-}
-
-bits_to_int :: proc(bits: [dynamic]int) -> int
-{
-    value := 0;
-    digit := 1;
-    for i := len(bits)-1; i >= 0; i -= 1
-    {
-        value += digit * bits[i];
-        digit *= 2;
-    }
-    return value;
-}
-
-
-to_binary :: proc(num: int) -> string
-{
-    bit_mask : int = 1 << 35;
-    i : uint = 35;
-    builder := strings.make_builder();
-
-    for
-    {
-        digit := (num & bit_mask) >> i;
-        strings.write_int(&builder, digit);
-        bit_mask = bit_mask >> 1;
-        if i == 0 
-        {
-            return strings.to_string(builder);
-        }
-        i = i - 1;
-    }
 }
