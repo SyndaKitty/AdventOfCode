@@ -166,3 +166,17 @@ int_sin := [?]int{0,1,0,-1};
 neighbors :: [?]Vector2 {{1,0}, {1,1}, {0,1}, {-1,1}, {-1,0}, {-1,-1}, {0,-1}, {1,-1}};
 neighbors_x :: [?]int {1, 1, 0, -1, -1, -1, 0, 1 };
 neighbors_y :: [?]int {0, 1, 1, 1, 0, -1, -1, -1 };
+
+
+// Functions to remove the ",ok" idiom to make things quicker to work with 
+replace :: proc(input: string, old: string, new: string) -> string
+{
+    out,_ := strings.replace_all(input, old, new);
+    return out;
+}
+
+parse_int :: proc(input: string) -> int
+{
+    out,_ := strconv.parse_int(input);
+    return out;
+}
