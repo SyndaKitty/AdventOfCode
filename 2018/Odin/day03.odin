@@ -34,10 +34,9 @@ main :: proc() {
         id += 1;
     }
 
-    conflicts := 0;
-    non_overlap: int;
 
     // Part 1
+    conflicts := 0;
     fabric: map[i64]int;
     for claim,i in claims {
         using claim;
@@ -63,6 +62,6 @@ main :: proc() {
             }
         }
         fmt.println(i + 1);
+        return;
     }
-
 }
