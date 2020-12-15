@@ -8,6 +8,11 @@ main :: proc() {
     input := string(#load("../inputs/02.txt"));
     lines := strings.split(input, "\r\n");
 
+    part_one(lines);
+    part_two(lines);
+}
+
+part_one :: proc(lines: []string) {
     two_count := 0;
     three_count := 0;
 
@@ -28,4 +33,25 @@ main :: proc() {
     }
 
     fmt.println(two_count * three_count);
+}
+
+part_two :: proc(lines: []string) {
+    l := len(lines);
+    for line,i in lines {
+        for j := i+1; j < l; j+=1 {
+            mismatches := 0;
+            for c, k in line {
+                if lines[j][k] != u8(c) do mismatches += 1;
+            }
+
+            if mismatches != 1 {
+                continue;
+            }
+
+            for c, k in line {
+                if lines[j][k] == u8(c) do fmt.print(c);
+            }
+            return;
+        }
+    }
 }
