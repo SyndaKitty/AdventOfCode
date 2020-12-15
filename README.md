@@ -44,9 +44,11 @@ All AoC soutions I have finished
 |----|---------------|
 | 01 |[✅][18d01odin] |
 | 02 |[✅][18d02odin] |
+| 03 |[✅][18d03odin] |
 
 [18d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/day01.odin
 [18d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/day02.odin
+[18d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/day03.odin
 
 
 ## 2017
