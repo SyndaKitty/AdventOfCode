@@ -40,6 +40,14 @@ All AoC soutions I have finished
 ## 2019
 
 ## 2018
+|    |[Odin][odin]|
+|----|---------------|
+| 01 |[✅][18d01odin] |
+| 02 |[✅][18d02odin] |
+
+[18d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/Day01.odin
+[18d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/Day02.odin
+
 
 ## 2017
 |    |[Odin][odin]|[C#][csharp]   |
