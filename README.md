@@ -40,6 +40,14 @@ All AoC soutions I have finished
 ## 2019
 
 ## 2018
+|    |[Odin][odin]|
+|----|---------------|
+| 01 |[✅][18d01odin] |
+| 02 |[✅][18d02odin] |
+
+[18d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/day01.odin
+[18d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2018/Odin/day02.odin
+
 
 ## 2017
 |    |[Odin][odin]|[C#][csharp]   |
@@ -53,10 +61,10 @@ All AoC soutions I have finished
 | 07 |                |[❌][17d01csharp] |
 
 
-[17d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day01.odin
-[17d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day02.odin
-[17d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day03.odin
-[17d04odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/Day04.odin
+[17d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/day01.odin
+[17d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/day02.odin
+[17d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/day03.odin
+[17d04odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/day04.odin
 [csharp]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [17d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/CSharp/Program.cs#L145
 [17d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/CSharp/Program.cs#L188
