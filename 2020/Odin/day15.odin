@@ -28,7 +28,6 @@ main :: proc() {
     {
         turn += 1;
         
-        next_to_say := get_next_to_say(turn, last_said, time_said);
         if last_said in time_said {
             next_to_say = turn - time_said[last_said];
         }
