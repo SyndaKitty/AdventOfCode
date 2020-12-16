@@ -6,8 +6,8 @@ import "core:strconv"
 
 import "../../libs/Odin/aoc"
  
-Day1Turn :: 2020;
-Day2Turn :: 30_000_000;
+Part1Turn :: 2020;
+Part2Turn :: 30_000_000;
 
 main :: proc() {
     input := string(#load("../inputs/15.txt"));
@@ -37,10 +37,10 @@ main :: proc() {
 
         time_said[last_said] = turn;        
         
-        if turn == Day1Turn {
+        if turn == Part1Turn {
             fmt.println(last_said);
         }
-        if turn == Day2Turn {
+        if turn == Part2Turn {
             fmt.println(last_said);
             return;
         }
