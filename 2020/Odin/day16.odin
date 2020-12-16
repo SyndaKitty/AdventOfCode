@@ -45,7 +45,8 @@ main :: proc() {
         append(&other_tickets, parse_ticket(line));
     }
     
-    part_one(fields, other_tickets);
+    valid_tickets := part_one(fields, other_tickets);
+    part_two(fields, my_ticket, valid_tickets);
 }
 
 
@@ -70,20 +71,80 @@ in_range_slice :: proc(val: int, range: [2]int) -> bool {
 
 in_range :: proc {in_range_field, in_range_slice};
 
-part_one :: proc(fields: [dynamic]Field, other_tickets: [dynamic][dynamic]int) {
+part_one :: proc(fields: [dynamic]Field, other_tickets: [dynamic][dynamic]int) -> [dynamic][dynamic]int {
+    valid_tickets: [dynamic][dynamic]int;
     error_rate := 0;
 
     for ticket in other_tickets {
+        valid := true;
         vals: for val in ticket {
             for field in fields {
                 if in_range(val, field) {
                     continue vals;
                 }
             }
+            valid = false;
             error_rate += val;
+        }
+        if valid do append(&valid_tickets, ticket);
+    }
+
+    fmt.println(error_rate);
+    return valid_tickets;
+}
+
+part_two :: proc(fields: [dynamic]Field, my_ticket: [dynamic]int, valid_tickets: [dynamic][dynamic]int) {
+    remaining_fields: map[int] bool;
+    field_lookup: map[int]int;
+    for i in 0..<len(fields) {
+        remaining_fields[i] = true;
+        field_lookup[i] = -1;
+    }
+
+    assigned := 0;
+    outer: for {
+        for i in 0..<len(fields) {
+            if field_lookup[i] >= 0 do continue;
+
+            possible_fields: map[int]bool;
+            for key,value in remaining_fields {
+                if value do possible_fields[key] = true;
+            }
+
+            field_loop: for field_index,available in possible_fields { 
+                for ticket in valid_tickets {
+                    if !in_range(ticket[i], fields[field_index]) {
+                        possible_fields[field_index] = false;
+                        continue field_loop;
+                    }
+                }
+            }
+
+            possible_count := 0;
+            for key, value in possible_fields {
+                if value do possible_count += 1;
+            }
+
+            if possible_count == 1 {
+                for key, value in possible_fields {
+                    if !value do continue;
+                    field_lookup[i] = key;
+                    remaining_fields[key] = false;
+                }
+                assigned += 1;
+                if assigned == len(fields) {
+                    break outer;
+                }
+            }
         }
     }
 
-    // Not 612681
-    fmt.println(error_rate);
+    total := 1;
+    for val,i in my_ticket {
+        name := fields[field_lookup[i]].name;
+        if len(name) >= 9 && name[0:9] == "departure" {
+            total *= val;
+        }
+    }
+    fmt.println(total);
 }
