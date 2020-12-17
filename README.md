@@ -21,7 +21,7 @@ All AoC soutions I have finished
 | 14 |[✅][20d14odin] |
 | 15 |[✅][20d15odin] |
 | 16 |[✅][20d16odin] |
-| 17 |[✅][20d16odin] |
+| 17 |[✅][20d17odin] |
 
 [odin]: http://odin-lang.org/
 [20d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day01.odin
