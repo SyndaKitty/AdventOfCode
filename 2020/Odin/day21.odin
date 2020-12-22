@@ -80,7 +80,7 @@ main :: proc() {
     }
     fmt.println(total);
 
-    // Part 2 - solve for each allergent
+    // Part 2 - solve for each allergen
     solved_allergens := make(map[string]bool, len(allergens));
     dangerous_ingredients := make([dynamic][2]string);
     for {
@@ -102,7 +102,6 @@ main :: proc() {
 
             if count == 1 { 
                 append(&dangerous_ingredients, [2]string{matched, allergen});
-                // dangerous_ingredients[ingredient] = allergen;
                 solved_allergens[allergen] = true;
                 for a in allergens {
                     possible_allergens[{matched, a}] = false;

@@ -3,9 +3,12 @@ package main
 import "core:fmt"
 import "../../libs/Odin/aoc"
 
-V3 :: aoc.V3;
 
 main :: proc() {
-    a: V3;
-    fmt.println(a);
+    data: map[[dynamic]int]bool;
+
+    asd: [dynamic]int;
+    append(&asd, 1, 2, 3);
+
+    data[asd[:]] = true;
 }
