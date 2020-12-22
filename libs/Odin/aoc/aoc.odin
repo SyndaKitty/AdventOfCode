@@ -283,11 +283,11 @@ y :: proc(a: V2) -> int {
     return a[1];
 }
 
-theta :: proc(a: V2) -> int {
+int_angle :: proc(a: V2) -> int {
     x := a[0];
-    if x != 0 do x /= x;
+    if x != 0 do x /= abs(x);
     y := a[1];
-    if y != 0 do y /= y;
+    if y != 0 do y /= abs(y);
 
     assert(x != y && x != -y, "Invalid call to theta");
     if x == 1 do return 0;
