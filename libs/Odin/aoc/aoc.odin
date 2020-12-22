@@ -221,6 +221,8 @@ Vector2 :: [2]int;
 V2 :: Vector2;
 Vector3 :: [3]int;
 V3 :: Vector3;
+Vector4 :: [4]int;
+V4 :: Vector4;
 
 int_cos := [?]int{1,0,-1,0};
 int_sin := [?]int{0,1,0,-1};
