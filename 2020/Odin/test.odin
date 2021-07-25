@@ -5,10 +5,9 @@ import "../../libs/Odin/aoc"
 
 
 main :: proc() {
-    data: map[[dynamic]int]bool;
-
-    asd: [dynamic]int;
-    append(&asd, 1, 2, 3);
-
-    data[asd[:]] = true;
+    data: map[[2]int]bool;
+    for i in 1..100 {
+        data[{-27,16}] = true;
+    }
+    fmt.println(data);
 }

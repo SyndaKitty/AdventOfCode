@@ -8,9 +8,10 @@ import "../../libs/Odin/aoc"
 
 Rule :: struct {
     rules_a: [dynamic]int,
-    rules_b: [dynamic]int,
-    match: string
+    rules_b: [dynamic]int
 }
+
+char: map[int]string;
 
 main :: proc() {
     input := string(#load("../inputs/19.txt"));
@@ -25,7 +26,7 @@ main :: proc() {
         rule_parts := strings.split(rule_line, ": ");
         rule_index := aoc.parse_int(rule_parts[0]);
         if rule_parts[1][0:1] == "\"" {
-            rule.match = rule_parts[1][1:2];
+            char[rule_index] = rule_parts[1][1:2]; 
         }
         else {
             lists := strings.split(rule_parts[1], " | ");

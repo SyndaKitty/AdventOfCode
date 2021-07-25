@@ -1,0 +1,1 @@
+@odin run day03.odin
