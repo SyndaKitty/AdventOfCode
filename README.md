@@ -3,25 +3,14 @@ All AoC soutions I have finished
 
 ## 2020
 
-|    |[Odin][odin]   |
-|----|---------------|
-| 01 |[✅][20d01odin]  |
-| 02 |[✅][20d02odin] |
-| 03 |[✅][20d03odin] |
-| 04 |[✅][20d04odin] |
-| 05 |[✅][20d05odin] |
-| 06 |[✅][20d06odin] |
-| 07 |[✅][20d07odin] |
-| 08 |[✅][20d08odin] |
-| 09 |[✅][20d09odin] |
-| 10 |[✅][20d10odin] |
-| 11 |[✅][20d11odin] |
-| 12 |[✅][20d12odin] |
-| 13 |[✅][20d13odin] |
-| 14 |[✅][20d14odin] |
-| 15 |[✅][20d15odin] |
-| 16 |[✅][20d16odin] |
-| 17 |[✅][20d17odin] |
+
+|[Odin][odin]        |                     |                     |                     |                    |
+|--------------------|---------------------|---------------------|---------------------|--------------------|
+| 01 [✅][20d01odin] | 06 [✅][20d06odin] | 11 [✅][20d11odin] | 16 [✅][20d16odin] | 21 [✅][20d21odin] |
+| 02 [✅][20d02odin] | 07 [✅][20d07odin] | 12 [✅][20d12odin] | 17 [✅][20d17odin] | 22 [✅][20d22odin] |
+| 03 [✅][20d03odin] | 08 [✅][20d08odin] | 13 [✅][20d13odin] | 18 [✅][20d18odin] | 23 [✅][20d23odin] |
+| 04 [✅][20d04odin] | 09 [✅][20d09odin] | 14 [✅][20d14odin] | 19 [✅][20d19odin] | 24 [✅][20d24odin] |
+| 05 [✅][20d05odin] | 10 [✅][20d10odin] | 15 [✅][20d15odin] | 20 [✅][20d20odin] | 25 [✅][20d25odin] |
 
 [odin]: http://odin-lang.org/
 [20d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day01.odin
@@ -41,6 +30,15 @@ All AoC soutions I have finished
 [20d15odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day15.odin
 [20d16odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day16.odin
 [20d17odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day17.odin
+[20d18odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day18.odin
+[20d19odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day19.odin
+[20d20odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day20.odin
+[20d21odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day21.odin
+[20d22odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day22.odin
+[20d23odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day23.odin
+[20d24odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day24.odin
+[20d25odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/Odin/day25.odin
+
 
 
 ## 2019
