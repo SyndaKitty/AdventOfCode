@@ -64,7 +64,7 @@ All AoC soutions I have finished
 | 04 |[✅][17d04odin] |[✅][17d04csharp] |
 | 05 |                |[✅][17d01csharp] |
 | 06 |                |[✅][17d01csharp] |
-| 07 |                |[❌][17d01csharp] |
+| 07 |                | |
 
 
 [17d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2017/Odin/day01.odin
@@ -90,27 +90,27 @@ All AoC soutions I have finished
 
 
 ## 2015
-|    |[Odin][odin]    | [Java][java]|
-|----|----------------|-------------|
-| 01 |[✅][15d01odin] |[✅][15d01java]|
-| 02 |[✅][15d02odin] |[✅][15d02java]|
-| 03 |[✅][15d03odin] |[✅][15d03java]|
-| 04 |[✅][15d04odin] |[✅][15d04java]|
-| 05 |[✅][15d05odin] |[❌][15d05java]|
-| 06 |[✅][15d06odin] ||
-| 07 |[✅][15d07odin] ||
-| 08 |[✅][15d08odin] ||
-| 09 |[✅][15d09odin] ||
-| 10 |[✅][15d10odin] ||
-| 11 |[✅][15d11odin] ||
-| 12 |[✅][15d12odin] ||
-| 13 |[✅][15d13odin] ||
-| 14 |[✅][15d14odin] ||
-| 15 |[✅][15d15odin] ||
-| 16 |[✅][15d16odin] ||
-| 17 |[✅][15d17odin] ||
-| 18 |[✅][15d18odin] ||
-| 19 |[❌][15d19odin] ||
+|    |[Odin][odin]    | [Java][java]   | C#             |
+|----|----------------|----------------|----------------|
+| 01 |[✅][15d01odin] |[✅][15d01java]|[✅][15d01csharp]|
+| 02 |[✅][15d02odin] |[✅][15d02java]|[✅][15d02csharp]|
+| 03 |[✅][15d03odin] |[✅][15d03java]|[✅][15d03csharp]|
+| 04 |[✅][15d04odin] |[✅][15d04java]|[✅][15d04csharp]|
+| 05 |[✅][15d05odin] |                |[✅][15d05csharp]|
+| 06 |[✅][15d06odin] |                |[✅][15d06csharp]|
+| 07 |[✅][15d07odin] |                |[✅][15d07csharp]|
+| 08 |[✅][15d08odin] |                |[✅][15d08csharp]|
+| 09 |[✅][15d09odin] |                |[✅][15d09csharp]|
+| 10 |[✅][15d10odin] |                |[✅][15d10csharp]|
+| 11 |[✅][15d11odin] |                |[✅][15d11csharp]|
+| 12 |[✅][15d12odin] |                ||
+| 13 |[✅][15d13odin] |                ||
+| 14 |[✅][15d14odin] |                ||
+| 15 |[✅][15d15odin] |                ||
+| 16 |[✅][15d16odin] |                ||
+| 17 |[✅][15d17odin] |                ||
+| 18 |[✅][15d18odin] |                ||
+| 19 |                |                ||
 
 [java]: https://www.java.com/en/
 [15d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/Odin/day01.odin
@@ -137,3 +137,14 @@ All AoC soutions I have finished
 [15d03java]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/Java/Day3.java
 [15d04java]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/Java/Day4.java
 [15d05java]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/Java/Day5.java
+[15d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day01/Program.cs
+[15d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day02/Program.cs
+[15d03csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day03/Program.cs
+[15d04csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day04/Program.cs
+[15d05csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day05/Program.cs
+[15d06csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day06/Program.cs
+[15d07csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day07/Program.cs
+[15d08csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day08/Program.cs
+[15d09csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day09/Program.cs
+[15d10csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day10/Program.cs
+[15d11csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day11/Program.cs
