@@ -1,7 +1,5 @@
 using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
 
 public class Program {
     public static void Main() {
@@ -9,7 +7,7 @@ public class Program {
 
         // Part 1
         password = FindNextPassword(password);
-        Console.WriteLine(password );
+        Console.WriteLine(password);
         
         // Part 2
         password = FindNextPassword(password);
