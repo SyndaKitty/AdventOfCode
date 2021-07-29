@@ -2,6 +2,7 @@ using System.IO;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using AdventOfCode;
 
 public class Program {
     public static void Main() {
@@ -9,10 +10,10 @@ public class Program {
         var stats = new List<ReindeerSpecs>();        
 
         foreach (var line in lines) {
-            var words = line.Split(" ");
-            var speed = Convert.ToInt32(words[3]);
-            var length = Convert.ToInt32(words[6]);
-            var rest = Convert.ToInt32(words[13]);
+            var nums = AOC.ParseInts(line);
+            var speed = Convert.ToInt32(nums[0]);
+            var length = Convert.ToInt32(nums[1]);
+            var rest = Convert.ToInt32(nums[2]);
             stats.Add(new ReindeerSpecs(speed, length, rest));
         }
 
