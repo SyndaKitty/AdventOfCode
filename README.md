@@ -103,13 +103,13 @@ All AoC soutions I have finished
 | 09 |[✅][15d09odin] |                |[✅][15d09csharp]|
 | 10 |[✅][15d10odin] |                |[✅][15d10csharp]|
 | 11 |[✅][15d11odin] |                |[✅][15d11csharp]|
-| 12 |[✅][15d12odin] |                ||
-| 13 |[✅][15d13odin] |                ||
-| 14 |[✅][15d14odin] |                ||
-| 15 |[✅][15d15odin] |                ||
-| 16 |[✅][15d16odin] |                ||
-| 17 |[✅][15d17odin] |                ||
-| 18 |[✅][15d18odin] |                ||
+| 12 |[✅][15d12odin] |                |[✅][15d12csharp]|
+| 13 |[✅][15d13odin] |                |[✅][15d13csharp]|
+| 14 |[✅][15d14odin] |                |[✅][15d14csharp]|
+| 15 |[✅][15d15odin] |                |[✅][15d15csharp]|
+| 16 |[✅][15d16odin] |                |[✅][15d16csharp]|
+| 17 |[✅][15d17odin] |                |[✅][15d17csharp]|
+| 18 |[✅][15d18odin] |                |[✅][15d18csharp]|
 | 19 |                |                ||
 
 [java]: https://www.java.com/en/
@@ -148,3 +148,10 @@ All AoC soutions I have finished
 [15d09csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day09/Program.cs
 [15d10csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day10/Program.cs
 [15d11csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day11/Program.cs
+[15d12csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day12/Program.cs
+[15d13csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day13/Program.cs
+[15d14csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day14/Program.cs
+[15d15csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day15/Program.cs
+[15d16csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day16/Program.cs
+[15d17csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day17/Program.cs
+[15d18csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day18/Program.cs
