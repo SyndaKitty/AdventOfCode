@@ -29,6 +29,33 @@ namespace AdventOfCode
             return Permutations(input.ToArray());
         }
 
+        public static IEnumerable<bool[]> CombinationBools(int length) {
+            int combinations = 1;
+            for (int i = 0; i < length; i++) {
+                combinations *= 2;
+            }
+
+            for (int i = 0; i < combinations; i++) {
+                var result = new bool[length];
+                for (int j = 0; j < length; j++) {
+                    result[j] = ((i >> j) & 1) == 0;
+                }
+                yield return result;
+            }
+        }
+
+        public static IEnumerable<IEnumerable<T>> Combinations<T>(List<T> input) {
+            foreach (var combination in CombinationBools(input.Count)) {
+                List<T> result = new List<T>();
+                for (int i = 0; i < input.Count; i++) {
+                    if (combination[i]) {
+                        result.Add(input[i]);
+                    }
+                }
+                yield return result;
+            }
+        }
+
         public static List<int> ParseInts(string line) {
             List<int> results = new List<int>();
             
@@ -52,5 +79,8 @@ namespace AdventOfCode
                 yield return ParseInts(line);
             }
         }
+
+        public static T[] Clone<T>(T[] array) => (T[])array.Clone();
+        public static T[,] Clone<T>(T[,] array) => (T[,])array.Clone();
     }
 }
