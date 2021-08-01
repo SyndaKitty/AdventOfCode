@@ -82,5 +82,23 @@ namespace AdventOfCode
 
         public static T[] Clone<T>(T[] array) => (T[])array.Clone();
         public static T[,] Clone<T>(T[,] array) => (T[,])array.Clone();
+
+        public static IEnumerable<TNode> Backtrack<TData,TNode>(TData data, TNode node, 
+            Func<TData, TNode, bool> Reject, 
+            Func<TData, TNode, bool> Accept, 
+            Func<TData, TNode, IEnumerable<TNode>> Children) {
+            if (!Reject(data, node)) {
+                if (Accept(data, node)) {
+                    yield return node;
+                }
+                else {
+                    foreach (var child in Children(data, node)) {
+                        foreach (var valid in Backtrack(data, child, Reject, Accept, Children)) {
+                            yield return valid;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

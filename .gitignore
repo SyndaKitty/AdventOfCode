@@ -396,3 +396,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/AdventOfCode.pdb
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/ref/AdventOfCode.dll
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/AdventOfCode.pdb
+libs/CSharp/AdventOfCode/bin/Debug/net5.0/ref/AdventOfCode.dll
