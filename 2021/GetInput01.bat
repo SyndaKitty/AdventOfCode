@@ -1,1 +1,0 @@
-curl -s --cookie \"session=53616c7465645f5fbeeb2ffb6bdcdb6b5e07a6a0f230762fd5365c174350351a7fdd8f682ef5627393901198207d0512\" https://adventofcode.com/2021/day/1/input > 01.txt
