@@ -56,6 +56,36 @@ namespace AdventOfCode
             }
         }
 
+        // public static IEnumerable<int[]> Groupings(int itemCount, int groups) {
+        //     int[] result = new int[itemCount];
+        //     yield return result;
+
+        //     long count = 1;
+        //     for (int i = 0; i < itemCount; i++) {
+        //         count *= groups;
+        //     }
+        //     Console.WriteLine(count);
+
+        // TODO
+
+        // }
+
+        public static IEnumerable<bool[]> ChooseBools(int n, int s, bool[] b) {
+            for (int i = s; i < b.Length; i++) {
+                Console.WriteLine(n + " " + s + " " + i);
+                b[i] = true;
+                if (n > 0) {
+                    foreach (var chosen in ChooseBools(n - 1, i + 1, b)) {
+                        yield return b;
+                    }
+                }
+                else yield return b;
+
+                b[i] = false;
+            }
+        }
+
+
         public static List<int> ParseInts(string line) {
             List<int> results = new List<int>();
             
