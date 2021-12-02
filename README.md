@@ -12,8 +12,8 @@ All AoC soutions I have finished
 | 04 🗘                 | 09 🗘                | 14 🗘                 | 19 🗘                 | 24 🗘               |
 | 05 🗘                 | 10 🗘                | 15 🗘                 | 20 🗘                 | 25 🗘               |
 
-[21d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C#/day01/Program.cs
-[21d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C#/day02/Program.cs
+[21d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day01/Program.cs
+[21d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day02/Program.cs
 
 
 ## 2020
