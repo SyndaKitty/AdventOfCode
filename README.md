@@ -1,6 +1,20 @@
 # AdventOfCode
 All AoC soutions I have finished
 
+## 2021
+
+
+|C#                  |                     |                     |                     |                    |
+|--------------------|---------------------|---------------------|---------------------|--------------------|
+| 01 [✅][21d01csharp] |                    |                     |                     |                    |
+| 02 [✅][21d02csharp] |                    |                     |                     |                    |
+|                       |                    |                     |                     |                    |
+|                       |                    |                     |                     |                    |
+|                       |                    |                     |                     |                    |
+[21d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C#/day01/Program.cs
+[21d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2020/C#/day02/Program.cs
+
+
 ## 2020
 
 
