@@ -1,4 +1,4 @@
-namespace AOC {
+﻿namespace AOC {
     public static class Helper {
         public static List<int> Primes(int n) {
             if (n <= 1) return new List<int>();
