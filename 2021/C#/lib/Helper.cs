@@ -1,5 +1,32 @@
 ﻿namespace AOC {
     public static class Helper {
+        public static T MostCommon<T>(IEnumerable<T> items) where T : notnull, IEquatable<T> {
+            var counts = DistinctWithCounts<T>(items);
+
+            return counts.OrderByDescending(c => c.Item2).First().Item1;
+        }
+
+        public static List<T> Distinct<T>(IEnumerable<T> items) {
+            HashSet<T> result = new HashSet<T>();
+            foreach (var item in items) {
+                result.Add(item);
+            }
+            return result.ToList();
+        }
+
+        public static List<(T,int)> DistinctWithCounts<T>(IEnumerable<T> items) where T : notnull, IEquatable<T> {
+            Dictionary<T, int> counts = new Dictionary<T, int>();
+
+            foreach (var item in items) {
+                if (!counts.ContainsKey(item)) {
+                    counts[item] = 0;
+                }
+                counts[item] = counts[item] + 1;
+            }
+
+            return counts.Select(kvp => (kvp.Key, kvp.Value)).OrderByDescending(i => i.Item2).ToList();
+        }
+
         public static List<int> Primes(int n) {
             if (n <= 1) return new List<int>();
             if (n == 2) return new List<int>{ 2 };

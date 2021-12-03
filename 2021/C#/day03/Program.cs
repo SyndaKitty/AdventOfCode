@@ -1,4 +1,6 @@
-﻿string inputFile = @"../../inputs/03.txt";
+﻿using AOC;
+
+string inputFile = @"../../inputs/03.txt";
 
 var input = File.ReadAllText(inputFile);
 var lines = File.ReadAllLines(inputFile);
@@ -8,14 +10,9 @@ string gamma = "";
 string epsilon = "";
 
 for (int i = 0; i < 12; i++) {
-    int zero = 0;
-    int one = 0;
-    foreach (var line in lines) {
-        if (line.ToCharArray()[i] == '0') zero++;
-        else one++;
-    }
+    var c = Helper.MostCommon(lines.Select(l => l.ToCharArray()[i]));
 
-    if (zero > one) {
+    if (c == '0') {
         gamma += "0";
         epsilon += "1";
     } 
@@ -26,7 +23,6 @@ for (int i = 0; i < 12; i++) {
 }
 
 Console.WriteLine(Convert.ToInt32(epsilon, 2) * Convert.ToInt32(gamma, 2));
-
 
 // Part 2 - messy but it works
 List<string> validLines = new List<string>(lines);
@@ -47,6 +43,7 @@ for (int i = 0; i < 12; i++) {
     else {
         validLines = validLines.Where(l => l.ToCharArray()[i] == '1').ToList();
     }
+    if (validLines.Count == 1) break;
 }
 int oxygen = Convert.ToInt32(validLines.First(), 2);
 
