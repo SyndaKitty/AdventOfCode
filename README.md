@@ -16,6 +16,19 @@ All AoC soutions I have finished
 [21d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day02/Program.cs
 [21d03csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day03/Program.cs
 
+### [Odin][odin]
+| Sun                 | Mon                 | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
+|---------------------|---------------------|------------------------|------------------------|-----------------------|-----------------------|-----------------------|
+|                     |                     |                        | [1 🌟🌟][21d01odin]   | [2 🌟🌟][21d02odin]  | [3 🌟🌟][21d03odin]   | 4 ☆ ☆                |
+| 5 ☆ ☆              | 6 ☆ ☆              | 7 ☆ ☆                 | 8 ☆ ☆                 | 9 ☆ ☆                | 10 ☆ ☆               | 11 ☆ ☆               |
+| 12 ☆ ☆             | 13 ☆ ☆             | 14 ☆ ☆                | 15 ☆ ☆                | 16 ☆ ☆               | 17 ☆ ☆               | 18 ☆ ☆               |
+| 19 ☆ ☆             | 20 ☆ ☆             | 21 ☆ ☆                | 22 ☆ ☆                | 23 ☆ ☆               | 24 ☆ ☆               | 25 ☆ ☆               |
+
+[21d01odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day01.odin
+[21d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day02.odin
+[21d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day03.odin
+
+
 ## 2020
 
 
