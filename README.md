@@ -123,6 +123,15 @@ All AoC soutions I have finished
 
 
 ## 2015
+
+### C#
+| Sun                   | Mon                   | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
+|-----------------------|-----------------------|------------------------|------------------------|-----------------------|-----------------------|-----------------------|
+|                       |                       |[1 🌟🌟][15d01csharp]  |[2 🌟🌟][15d02csharp]   |[3 🌟🌟][15d03csharp]|[4 🌟🌟][15d04csharp] |[5 🌟🌟][15d05csharp]  | 
+|[6 🌟🌟][15d06csharp] |[7 🌟🌟][15d07csharp] |[8 🌟🌟][15d08csharp]  |[9 🌟🌟][15d09csharp]   |[10 🌟🌟][15d10csharp]|[11 🌟🌟][15d11csharp]|[12 🌟🌟][15d12csharp] | 
+|[13 🌟🌟][15d13csharp]|[14 🌟🌟][15d14csharp]|[15 🌟🌟][15d15csharp] |[16 🌟🌟][15d16csharp]   |[17 🌟🌟][15d17csharp]|[18 🌟🌟][15d18csharp]|[19 🌟🌟][15d19csharp] | 
+|[15 🌟🌟][15d20csharp]|[21 🌟🌟][15d21csharp]|[22 🌟🌟][15d22csharp] |[23 🌟🌟][15d23csharp]  |24 ☆ ☆                |25 ☆ ☆                |                       |
+
 |    |[Odin][odin]    | [Java][java]   | C#             |
 |----|----------------|----------------|----------------|
 | 01 |[✅][15d01odin] |[✅][15d01java]|[✅][15d01csharp]|
@@ -188,3 +197,9 @@ All AoC soutions I have finished
 [15d16csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day16/Program.cs
 [15d17csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day17/Program.cs
 [15d18csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day18/Program.cs
+[15d19csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day19/Program.cs
+[15d20csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day20/Program.cs
+[15d21csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day21/Program.cs
+[15d22csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day22/Program.cs
+[15d23csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2015/CSharp/Day23/Program.cs
+
