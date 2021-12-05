@@ -22,7 +22,7 @@ All AoC soutions I have finished
 | Sun                 | Mon                 | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
 |---------------------|---------------------|------------------------|------------------------|-----------------------|-----------------------|-----------------------|
 |                     |                     |                        | [1 🌟🌟][21d01odin]   | [2 🌟🌟][21d02odin]  | [3 🌟🌟][21d03odin]   | [4 🌟🌟][21d04odin]  |
-| 5 ☆ ☆              | 6 ☆ ☆              | 7 ☆ ☆                 | 8 ☆ ☆                 | 9 ☆ ☆                | 10 ☆ ☆               | 11 ☆ ☆               |
+|[5 🌟🌟][21d05odin] | 6 ☆ ☆              | 7 ☆ ☆                 | 8 ☆ ☆                 | 9 ☆ ☆                | 10 ☆ ☆               | 11 ☆ ☆               |
 | 12 ☆ ☆             | 13 ☆ ☆             | 14 ☆ ☆                | 15 ☆ ☆                | 16 ☆ ☆               | 17 ☆ ☆               | 18 ☆ ☆               |
 | 19 ☆ ☆             | 20 ☆ ☆             | 21 ☆ ☆                | 22 ☆ ☆                | 23 ☆ ☆               | 24 ☆ ☆               | 25 ☆ ☆               |
 
@@ -30,6 +30,7 @@ All AoC soutions I have finished
 [21d02odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day02.odin
 [21d03odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day03.odin
 [21d04odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day04.odin
+[21d05odin]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/Odin/day05.odin
 
 
 ## 2020
