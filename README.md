@@ -5,17 +5,18 @@ All AoC soutions I have finished
 
 ### C#
 
-| Sun                 | Mon                 | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
-|---------------------|---------------------|------------------------|------------------------|-----------------------|-----------------------|-----------------------|
-|                     |                     |                        | [1 🌟🌟][21d01csharp] | [2 🌟🌟][21d02csharp]| [3 🌟🌟][21d03csharp]| [4 🌟🌟][21d04csharp] |
-| 5 ☆ ☆              | 6 ☆ ☆              | 7 ☆ ☆                 | 8 ☆ ☆                 | 9 ☆ ☆                | 10 ☆ ☆               | 11 ☆ ☆               |
-| 12 ☆ ☆             | 13 ☆ ☆             | 14 ☆ ☆                | 15 ☆ ☆                | 16 ☆ ☆               | 17 ☆ ☆               | 18 ☆ ☆               |
-| 19 ☆ ☆             | 20 ☆ ☆             | 21 ☆ ☆                | 22 ☆ ☆                | 23 ☆ ☆               | 24 ☆ ☆               | 25 ☆ ☆               |
+| Sun                  | Mon                 | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
+|----------------------|---------------------|------------------------|------------------------|-----------------------|-----------------------|-----------------------|
+|                      |                     |                        | [1 🌟🌟][21d01csharp] | [2 🌟🌟][21d02csharp]| [3 🌟🌟][21d03csharp]| [4 🌟🌟][21d04csharp] |
+|[5 🌟🌟][21d05csharp]| 6 ☆ ☆              | 7 ☆ ☆                 | 8 ☆ ☆                 | 9 ☆ ☆                | 10 ☆ ☆               | 11 ☆ ☆               |
+| 12 ☆ ☆              | 13 ☆ ☆             | 14 ☆ ☆                | 15 ☆ ☆                | 16 ☆ ☆               | 17 ☆ ☆               | 18 ☆ ☆               |
+| 19 ☆ ☆              | 20 ☆ ☆             | 21 ☆ ☆                | 22 ☆ ☆                | 23 ☆ ☆               | 24 ☆ ☆               | 25 ☆ ☆               |
 
 [21d01csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day01/Program.cs
 [21d02csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day02/Program.cs
 [21d03csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day03/Program.cs
 [21d04csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day04/Program.cs
+[21d05csharp]: https://github.com/SpencasaurusRex/AdventOfCode/blob/master/2021/C%23/day05/Program.cs
 
 ### [Odin][odin]
 | Sun                 | Mon                 | Tue                    | Wed                    | Thu                   | Fri                   | Sat                   |
