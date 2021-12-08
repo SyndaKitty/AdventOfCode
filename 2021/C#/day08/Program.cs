@@ -39,10 +39,9 @@ foreach (var line in lines) {
     Dictionary<int, string> digit = new Dictionary<int, string>();
 
     foreach (var pattern in patterns) {
-        var len = pattern.Length;
-        int map = lengthToDigit[len];
-        if (map != -1) {
-            digit.Add(map, pattern);
+        int d = lengthToDigit[pattern.Length];
+        if (d != -1) {
+            digit.Add(d, pattern);
         }
     }
 
