@@ -56,7 +56,7 @@ foreach (var line in lines) {
     if (!corrupted) {
         foreach (var c in buffer.Reverse()) {
             score *= 5;
-            score += ")]}>".IndexOf(Closing[c]) + 1;
+            score += "([{<".IndexOf(c) + 1;
         }
         scores.Add(score);
     }
