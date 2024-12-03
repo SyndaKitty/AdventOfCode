@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-const int DecemberDays = 31;
+const int DecemberDays = 25;
 
 var readmePath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\README.md"));
 
