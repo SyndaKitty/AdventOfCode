@@ -117,7 +117,7 @@ My solutions to the Advent of Code challenges.
 |||[1 🌟🌟][2015d1csharp]|[2 🌟🌟][2015d2csharp]|[3 🌟🌟][2015d3csharp]|[4 🌟🌟][2015d4csharp]|[5 🌟🌟][2015d5csharp]|
 [6 🌟🌟][2015d6csharp]|[7 🌟🌟][2015d7csharp]|[8 🌟🌟][2015d8csharp]|[9 🌟🌟][2015d9csharp]|[10 🌟🌟][2015d10csharp]|[11 🌟🌟][2015d11csharp]|[12 🌟🌟][2015d12csharp]|
 [13 🌟🌟][2015d13csharp]|[14 🌟🌟][2015d14csharp]|[15 🌟🌟][2015d15csharp]|[16 🌟🌟][2015d16csharp]|[17 🌟🌟][2015d17csharp]|[18 🌟🌟][2015d18csharp]|[19 🌟🌟][2015d19csharp]|
-[20 🌟🌟][2015d20csharp]|[21 🌟🌟][2015d21csharp]|[22 🌟🌟][2015d22csharp]|[23 🌟🌟][2015d23csharp]|24 ☆☆|25 ☆☆|
+[20 🌟🌟][2015d20csharp]|[21 🌟🌟][2015d21csharp]|[22 🌟🌟][2015d22csharp]|[23 🌟🌟][2015d23csharp]|[24 🌟🌟][2015d24csharp]|25 ☆☆|
 
 [2015d1csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day01/Program.cs
 [2015d2csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day02/Program.cs
@@ -142,6 +142,7 @@ My solutions to the Advent of Code challenges.
 [2015d21csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day21/Program.cs
 [2015d22csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day22/Program.cs
 [2015d23csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day23/Program.cs
+[2015d24csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day24/Program.cs
 
 ### Odin
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|

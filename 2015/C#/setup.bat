@@ -1,5 +1,5 @@
 mkdir %1
 cd %1
 dotnet new console
-dotnet add reference ..\..\..\libs\CSharp\AdventOfCode\AdventOfCode.csproj
-template Program.cs aoc
+dotnet new sln
+dotnet sln day%1.sln add day%1.csproj
