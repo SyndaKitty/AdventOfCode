@@ -18,6 +18,7 @@ foreach (var year in years)
     ParseYear(year, readme);
 }
 File.WriteAllText(readmePath, readme.ToString());
+Console.WriteLine("README.md generated");
 
 void ParseYear(string yearText, StringBuilder readme)
 {
@@ -56,18 +57,18 @@ string GenerateCalendar(int year, LangInfo lang)
         calendar.Append("|");
         dayOfWeek++;
     }
-    
+
     while (date <= new DateTime(year, 12, DecemberDays))
     {
         bool dayCompleted = lang.FirstStar[date.Day - 1] || lang.SecondStar[date.Day - 1];
 
         if (dayCompleted)
         {
-            calendar.Append("[");  
+            calendar.Append("[");
         }
         calendar.Append($"{date.Day} ");
-        calendar.Append($"{(lang.FirstStar[date.Day - 1] ? "🌟" : "☆")}");
-        calendar.Append($"{(lang.SecondStar[date.Day - 1] ? "🌟" : "☆")}");
+        calendar.Append($"{(lang.FirstStar[date.Day - 1] ? "⭐" : "☆")}");
+        calendar.Append($"{(lang.SecondStar[date.Day - 1] ? "⭐" : "☆")}");
         if (dayCompleted)
         {
             calendar.Append("]");
@@ -95,14 +96,14 @@ string GenerateLinkHeader(string lang, int year, int day)
         "C#" => "csharp",
         _ => lang
     };
-    
+
     return $"[{year}d{day}{shorthand}]";
 }
 
 string GenerateLink(string lang, int year, int day)
 {
     string prefix = $"{GenerateLinkHeader(lang, year, day)}: https://github.com/SyndaKitty/AdventOfCode/blob/master/{year}/";
-    switch (lang) 
+    switch (lang)
     {
         case "C#":
             return $"{prefix}C%23/day{day:D2}/Program.cs";
@@ -117,7 +118,8 @@ string GenerateLink(string lang, int year, int day)
 
 LangInfo ParseLang(List<string> lines)
 {
-    return new LangInfo {
+    return new LangInfo
+    {
         Name = lines[0],
         FirstStar = ParseStars(lines[1]),
         SecondStar = ParseStars(lines[2])
@@ -157,9 +159,9 @@ List<bool> ParseStars(string line)
     return stars;
 }
 
-class LangInfo 
+class LangInfo
 {
-    public string Name { get; set; }
-    public List<bool> FirstStar { get; set; }
-    public List<bool> SecondStar { get; set; }
+    public string Name { get; set; } = "";
+    public List<bool> FirstStar { get; set; } = [];
+    public List<bool> SecondStar { get; set; } = [];
 }
