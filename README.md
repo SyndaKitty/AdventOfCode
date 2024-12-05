@@ -115,13 +115,13 @@ My solutions to the Advent of Code challenges.
 ### C#
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
-|||||[1 ⭐⭐][2016d1csharp]|2 ☆☆|3 ☆☆|
+|||||1 ☆☆|[2 ⭐⭐][2016d2csharp]|3 ☆☆|
 4 ☆☆|5 ☆☆|6 ☆☆|7 ☆☆|8 ☆☆|9 ☆☆|10 ☆☆|
 11 ☆☆|12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|
 18 ☆☆|19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|
 25 ☆☆|
 
-[2016d1csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day01/Program.cs
+[2016d2csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day02/Program.cs
 
 ## 2015
 ### C#
