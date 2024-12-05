@@ -13,6 +13,7 @@ foreach (var line in lines)
 
 Console.WriteLine(count);
 
+count = 0;
 var array = lines.Select(l => l.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList()).ToList();
 for (int j = 0; j < 3; j++)
 {
