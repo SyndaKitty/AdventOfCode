@@ -37,7 +37,10 @@ void ParseYear(string yearText, StringBuilder readme)
             break;
         }
         var lang = ParseLang(langLines);
-        readme.AppendLine($"### {lang.Name}");
+
+        int starCount = lang.FirstStar.Count(x => x) + lang.SecondStar.Count(x => x);
+
+        readme.AppendLine($"### {lang.Name} [{starCount}/50]");
         readme.AppendLine(GenerateCalendar(yearNumber, lang));
     }
 }

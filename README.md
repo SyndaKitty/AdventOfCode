@@ -2,7 +2,7 @@
 My solutions to the Advent of Code challenges.
 
 ## 2024
-### C#
+### C# [22/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |[1 ⭐⭐][2024d1csharp]|[2 ⭐⭐][2024d2csharp]|[3 ⭐⭐][2024d3csharp]|[4 ⭐⭐][2024d4csharp]|[5 ⭐⭐][2024d5csharp]|[6 ⭐⭐][2024d6csharp]|[7 ⭐⭐][2024d7csharp]|
@@ -23,7 +23,7 @@ My solutions to the Advent of Code challenges.
 [2024d11csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2024/C%23/day11/Program.cs
 
 ## 2021
-### C#
+### C# [22/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||[1 ⭐⭐][2021d1csharp]|[2 ⭐⭐][2021d2csharp]|[3 ⭐⭐][2021d3csharp]|[4 ⭐⭐][2021d4csharp]|
@@ -44,7 +44,7 @@ My solutions to the Advent of Code challenges.
 [2021d10csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/C%23/day10/Program.cs
 [2021d11csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/C%23/day11/Program.cs
 
-### Odin
+### Odin [14/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||[1 ⭐⭐][2021d1Odin]|[2 ⭐⭐][2021d2Odin]|[3 ⭐⭐][2021d3Odin]|[4 ⭐⭐][2021d4Odin]|
@@ -61,7 +61,7 @@ My solutions to the Advent of Code challenges.
 [2021d6Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day06.odin
 [2021d7Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day07.odin
 
-### Rust
+### Rust [6/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||[1 ⭐⭐][2021d1Rust]|[2 ⭐⭐][2021d2Rust]|[3 ⭐⭐][2021d3Rust]|4 ☆☆|
@@ -75,7 +75,7 @@ My solutions to the Advent of Code challenges.
 [2021d3Rust]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/rust/day03/src/main.rs
 
 ## 2020
-### Odin
+### Odin [50/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||[1 ⭐⭐][2020d1Odin]|[2 ⭐⭐][2020d2Odin]|[3 ⭐⭐][2020d3Odin]|[4 ⭐⭐][2020d4Odin]|[5 ⭐⭐][2020d5Odin]|
@@ -110,7 +110,7 @@ My solutions to the Advent of Code challenges.
 [2020d25Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day25.odin
 
 ## 2018
-### Odin
+### Odin [6/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||||||[1 ⭐⭐][2018d1Odin]|
@@ -124,7 +124,7 @@ My solutions to the Advent of Code challenges.
 [2018d3Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2018/Odin/day03.odin
 
 ## 2017
-### C#
+### C# [13/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||||[1 ⭐⭐][2017d1csharp]|[2 ⭐⭐][2017d2csharp]|
@@ -141,7 +141,7 @@ My solutions to the Advent of Code challenges.
 [2017d6csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day06/Program.cs
 [2017d7csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day07/Program.cs
 
-### Odin
+### Odin [8/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||||[1 ⭐⭐][2017d1Odin]|[2 ⭐⭐][2017d2Odin]|
@@ -156,10 +156,10 @@ My solutions to the Advent of Code challenges.
 [2017d4Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/Odin/day04.odin
 
 ## 2016
-### Odin
+### Odin [3/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
-|||||[1 ☆⭐][2016d1Odin]|[2 ⭐☆][2016d2Odin]|3 ☆☆|
+|||||[1 ⭐⭐][2016d1Odin]|[2 ⭐☆][2016d2Odin]|3 ☆☆|
 4 ☆☆|5 ☆☆|6 ☆☆|7 ☆☆|8 ☆☆|9 ☆☆|10 ☆☆|
 11 ☆☆|12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|
 18 ☆☆|19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|
@@ -168,19 +168,22 @@ My solutions to the Advent of Code challenges.
 [2016d1Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/Odin/day01.odin
 [2016d2Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/Odin/day02.odin
 
-### C#
+### C# [8/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
-|||||1 ☆☆|2 ☆☆|3 ☆☆|
+|||||[1 ⭐⭐][2016d1csharp]|[2 ⭐⭐][2016d2csharp]|[3 ⭐⭐][2016d3csharp]|
 [4 ⭐⭐][2016d4csharp]|5 ☆☆|6 ☆☆|7 ☆☆|8 ☆☆|9 ☆☆|10 ☆☆|
 11 ☆☆|12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|
 18 ☆☆|19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|
 25 ☆☆|
 
+[2016d1csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day01/Program.cs
+[2016d2csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day02/Program.cs
+[2016d3csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day03/Program.cs
 [2016d4csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2016/C%23/day04/Program.cs
 
 ## 2015
-### C#
+### C# [50/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||[1 ⭐⭐][2015d1csharp]|[2 ⭐⭐][2015d2csharp]|[3 ⭐⭐][2015d3csharp]|[4 ⭐⭐][2015d4csharp]|[5 ⭐⭐][2015d5csharp]|
@@ -214,7 +217,7 @@ My solutions to the Advent of Code challenges.
 [2015d24csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day24/Program.cs
 [2015d25csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/C%23/day25/Program.cs
 
-### Odin
+### Odin [36/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||[1 ⭐⭐][2015d1Odin]|[2 ⭐⭐][2015d2Odin]|[3 ⭐⭐][2015d3Odin]|[4 ⭐⭐][2015d4Odin]|[5 ⭐⭐][2015d5Odin]|
@@ -241,7 +244,7 @@ My solutions to the Advent of Code challenges.
 [2015d17Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/Odin/day17.odin
 [2015d18Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2015/Odin/day18.odin
 
-### Java
+### Java [8/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||[1 ⭐⭐][2015d1Java]|[2 ⭐⭐][2015d2Java]|[3 ⭐⭐][2015d3Java]|[4 ⭐⭐][2015d4Java]|5 ☆☆|
