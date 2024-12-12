@@ -44,14 +44,44 @@ My solutions to the Advent of Code challenges.
 [2021d10csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/C%23/day10/Program.cs
 [2021d11csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/C%23/day11/Program.cs
 
+### Odin
+|Sun|Mon|Tue|Wed|Thu|Fri|Sat|
+|---|---|---|---|---|---|---|
+||||[1 ⭐⭐][2021d1Odin]|[2 ⭐⭐][2021d2Odin]|[3 ⭐⭐][2021d3Odin]|[4 ⭐⭐][2021d4Odin]|
+[5 ⭐⭐][2021d5Odin]|[6 ⭐⭐][2021d6Odin]|[7 ⭐⭐][2021d7Odin]|8 ☆☆|9 ☆☆|10 ☆☆|11 ☆☆|
+12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|18 ☆☆|
+19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|25 ☆☆|
+
+
+[2021d1Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day01.odin
+[2021d2Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day02.odin
+[2021d3Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day03.odin
+[2021d4Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day04.odin
+[2021d5Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day05.odin
+[2021d6Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day06.odin
+[2021d7Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/Odin/day07.odin
+
+### Rust
+|Sun|Mon|Tue|Wed|Thu|Fri|Sat|
+|---|---|---|---|---|---|---|
+||||[1 ⭐⭐][2021d1Rust]|[2 ⭐⭐][2021d2Rust]|[3 ⭐⭐][2021d3Rust]|4 ☆☆|
+5 ☆☆|6 ☆☆|7 ☆☆|8 ☆☆|9 ☆☆|10 ☆☆|11 ☆☆|
+12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|18 ☆☆|
+19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|25 ☆☆|
+
+
+[2021d1Rust]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/rust/day01/src/main.rs
+[2021d2Rust]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/rust/day02/src/main.rs
+[2021d3Rust]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2021/rust/day03/src/main.rs
+
 ## 2020
 ### Odin
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |||[1 ⭐⭐][2020d1Odin]|[2 ⭐⭐][2020d2Odin]|[3 ⭐⭐][2020d3Odin]|[4 ⭐⭐][2020d4Odin]|[5 ⭐⭐][2020d5Odin]|
-[6 ⭐⭐][2020d6Odin]|[7 ⭐⭐][2020d7Odin]|8 ☆☆|9 ☆☆|10 ☆☆|11 ☆☆|12 ☆☆|
-13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|17 ☆☆|18 ☆☆|19 ☆☆|
-20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|24 ☆☆|25 ☆☆|
+[6 ⭐⭐][2020d6Odin]|[7 ⭐⭐][2020d7Odin]|[8 ⭐⭐][2020d8Odin]|[9 ⭐⭐][2020d9Odin]|[10 ⭐⭐][2020d10Odin]|[11 ⭐⭐][2020d11Odin]|[12 ⭐⭐][2020d12Odin]|
+[13 ⭐⭐][2020d13Odin]|[14 ⭐⭐][2020d14Odin]|[15 ⭐⭐][2020d15Odin]|[16 ⭐⭐][2020d16Odin]|[17 ⭐⭐][2020d17Odin]|[18 ⭐⭐][2020d18Odin]|[19 ⭐⭐][2020d19Odin]|
+[20 ⭐⭐][2020d20Odin]|[21 ⭐⭐][2020d21Odin]|[22 ⭐⭐][2020d22Odin]|[23 ⭐⭐][2020d23Odin]|[24 ⭐⭐][2020d24Odin]|[25 ⭐⭐][2020d25Odin]|
 
 [2020d1Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day01.odin
 [2020d2Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day02.odin
@@ -60,6 +90,24 @@ My solutions to the Advent of Code challenges.
 [2020d5Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day05.odin
 [2020d6Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day06.odin
 [2020d7Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day07.odin
+[2020d8Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day08.odin
+[2020d9Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day09.odin
+[2020d10Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day10.odin
+[2020d11Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day11.odin
+[2020d12Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day12.odin
+[2020d13Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day13.odin
+[2020d14Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day14.odin
+[2020d15Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day15.odin
+[2020d16Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day16.odin
+[2020d17Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day17.odin
+[2020d18Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day18.odin
+[2020d19Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day19.odin
+[2020d20Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day20.odin
+[2020d21Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day21.odin
+[2020d22Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day22.odin
+[2020d23Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day23.odin
+[2020d24Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day24.odin
+[2020d25Odin]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2020/Odin/day25.odin
 
 ## 2018
 ### Odin
@@ -80,7 +128,7 @@ My solutions to the Advent of Code challenges.
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 ||||||[1 ⭐⭐][2017d1csharp]|[2 ⭐⭐][2017d2csharp]|
-[3 ⭐⭐][2017d3csharp]|[4 ⭐⭐][2017d4csharp]|[5 ⭐⭐][2017d5csharp]|[6 ⭐⭐][2017d6csharp]|7 ☆☆|8 ☆☆|9 ☆☆|
+[3 ⭐⭐][2017d3csharp]|[4 ⭐⭐][2017d4csharp]|[5 ⭐⭐][2017d5csharp]|[6 ⭐⭐][2017d6csharp]|[7 ⭐☆][2017d7csharp]|8 ☆☆|9 ☆☆|
 10 ☆☆|11 ☆☆|12 ☆☆|13 ☆☆|14 ☆☆|15 ☆☆|16 ☆☆|
 17 ☆☆|18 ☆☆|19 ☆☆|20 ☆☆|21 ☆☆|22 ☆☆|23 ☆☆|
 24 ☆☆|25 ☆☆|
@@ -91,6 +139,7 @@ My solutions to the Advent of Code challenges.
 [2017d4csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day04/Program.cs
 [2017d5csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day05/Program.cs
 [2017d6csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day06/Program.cs
+[2017d7csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2017/C%23/day07/Program.cs
 
 ### Odin
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|

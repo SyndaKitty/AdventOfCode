@@ -111,6 +111,8 @@ string GenerateLink(string lang, int year, int day)
             return $"{prefix}Odin/day{day:D2}.odin";
         case "Java":
             return $"{prefix}Java/Day{day}.java";
+        case "Rust":
+            return $"{prefix}rust/day{day:D2}/src/main.rs";
         default:
             return "";
     }
