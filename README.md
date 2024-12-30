@@ -2,11 +2,11 @@
 My solutions to the Advent of Code challenges.
 
 ## 2024
-### C# [24/50]
+### C# [26/50]
 |Sun|Mon|Tue|Wed|Thu|Fri|Sat|
 |---|---|---|---|---|---|---|
 |[1 ⭐⭐][2024d1csharp]|[2 ⭐⭐][2024d2csharp]|[3 ⭐⭐][2024d3csharp]|[4 ⭐⭐][2024d4csharp]|[5 ⭐⭐][2024d5csharp]|[6 ⭐⭐][2024d6csharp]|[7 ⭐⭐][2024d7csharp]|
-[8 ⭐⭐][2024d8csharp]|[9 ⭐⭐][2024d9csharp]|[10 ⭐⭐][2024d10csharp]|[11 ⭐⭐][2024d11csharp]|[12 ⭐⭐][2024d12csharp]|13 ☆☆|14 ☆☆|
+[8 ⭐⭐][2024d8csharp]|[9 ⭐⭐][2024d9csharp]|[10 ⭐⭐][2024d10csharp]|[11 ⭐⭐][2024d11csharp]|[12 ⭐⭐][2024d12csharp]|[13 ⭐⭐][2024d13csharp]|14 ☆☆|
 15 ☆☆|16 ☆☆|17 ☆☆|18 ☆☆|19 ☆☆|20 ☆☆|21 ☆☆|
 22 ☆☆|23 ☆☆|24 ☆☆|25 ☆☆|
 
@@ -22,6 +22,7 @@ My solutions to the Advent of Code challenges.
 [2024d10csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2024/C%23/day10/Program.cs
 [2024d11csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2024/C%23/day11/Program.cs
 [2024d12csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2024/C%23/day12/Program.cs
+[2024d13csharp]: https://github.com/SyndaKitty/AdventOfCode/blob/master/2024/C%23/day13/Program.cs
 
 ## 2021
 ### C# [22/50]
